@@ -1,0 +1,12 @@
+  - cartopy
+  - dask
+  - dask_kubernetes
+  - datashader
+  - gcsfs
+  - geoviews
+  - holoviews
+  - matplotlib
+  - numpy
+  - pandas
+  - s3fs
+  - xarray
