@@ -1,19 +1,22 @@
+fuse_subgraphs: False
+fuse_ave_width: 0
+
 distributed:
   logging:
     bokeh: critical
-
-  dashboard:
-    link: /user/{JUPYTERHUB_USER}/proxy/{port}/status
 
   admin:
     tick:
       limit: 5s
 
 kubernetes:
-  worker-name: dask-{JUPYTERHUB_USER}-{uuid}
+  count:
+    max: 40
   worker-template:
     metadata:
     spec:
+      nodeSelector:
+        dask-worker: True
       restartPolicy: Never
       containers:
       - args:
@@ -32,5 +35,12 @@ kubernetes:
             cpu: "1.75"
             memory: 7G
           requests:
-            cpu: "1.75"
+            cpu: 1
             memory: 7G
+
+labextension:
+  factory:
+    module: dask_kubernetes
+    class: KubeCluster
+    args: []
+    kwargs: {}
