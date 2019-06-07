@@ -9,6 +9,7 @@ dependencies:
   - gcsfs
   - geoviews
   - holoviews
+  - hvplot
   - matplotlib
   - numpy
   - pandas
