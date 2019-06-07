@@ -1,38 +1,21 @@
-name: pangeo
 channels:
   - conda-forge
 dependencies:
   - python=3.6
-  - cartopy
-  - dask
-  - datashader
-  - gcsfs
-  - geoviews
-  - holoviews
-  - hvplot
-  - matplotlib
-  - numpy
-  - pandas
-  - s3fs
+  - intake
+  - intake-xarray
   - xarray
-  - distributed
-  - dask-kubernetes
-  - gcsfs
-  - intake::intake-xarray
   - zarr
+  - h5netcdf
   - matplotlib
-  - numcodecs
-  - python-blosc
-  - lz4
-  - nomkl
-  - nbserverproxy
-  - jupyter
-  - jupyterlab=0.35
-  - jupyterlab_launcher
-  - jupyter_client
-  - ipywidgets
-  - graphviz
-  - nodejs
+  - holoviews
+  - geoviews
+  - datashader
+  - hvplot
+  - panel
+  - requests
+  - pandas
+  - xgcm
+  - eofs
   - pip:
-    - kubernetes
-    - graphviz
+    - python-gist
