@@ -6,6 +6,7 @@ dependencies:
   - intake-xarray
   - xarray
   - zarr
+  - fsspec
   - h5netcdf
   - matplotlib
   - holoviews
