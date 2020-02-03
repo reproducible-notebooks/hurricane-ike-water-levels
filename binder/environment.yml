@@ -6,6 +6,7 @@ dependencies:
   - xarray
   - zarr
   - fsspec
+  - s3fs
   - h5netcdf
   - matplotlib
   - holoviews
