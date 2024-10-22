@@ -1,0 +1,21 @@
+name: coawst
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - ipykernel
+  - intake-xarray
+  - fsspec 
+  - s3fs
+  - xarray 
+  - cf_xarray
+  - zarr
+  - xoak
+  - fastparquet
+  - dask 
+  - coiled
+  - dask-gateway=2023.9
+  - datashader
+  - geoviews
+  - hvplot
+  - panel
